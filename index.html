@@ -1,52 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Banco dos Quadrinhos - Seu aplicativo de trocas de HQs</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
+            font-family: Arial, sans-serif;
             background-color: #FFF3E8;
             color: #333;
         }
+
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
         header {
             background-color: #1E1E1E;
             color: white;
             padding: 10px 0;
             text-align: center;
         }
+
         header img {
             width: 200px;
             height: 150px;
             display: block;
             margin: 0 auto;
         }
+
         header h1 {
             margin: 0;
             font-size: 2.5em;
         }
+
+        main {
+            flex: 1;
+        }
+
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
         }
+
         .content {
             padding: 20px 0;
             text-align: center;
         }
+
         .content h2 {
             color: #333;
             font-size: 2em;
             margin-bottom: 10px;
         }
+
         .content p {
             font-size: 1.2em;
             line-height: 1.6;
             margin-bottom: 20px;
         }
+
         .download-button {
             background-color: #1E1E1E;
             color: white;
@@ -55,17 +74,19 @@
             font-size: 1.5em;
             transition: background-color 0.3s ease;
         }
+
         .download-button:hover {
-            background-color: #1E1E1E;
+            background-color: #333;
         }
+
         footer {
             background-color: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
-            bottom: 0;
             width: 100%;
         }
+
         footer p {
             margin: 0;
             font-size: 0.9em;
@@ -73,28 +94,30 @@
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <img src="image.png" alt="Banco dos Quadrinhos">
-            <p>Seu aplicativo de trocas de HQs</p>
-        </div>
-    </header>
+    <div class="page-wrapper">
+        <header>
+            <div class="container">
+                <img src="image.png" alt="Banco dos Quadrinhos">
+                <p>Seu aplicativo de trocas de HQs</p>
+            </div>
+        </header>
 
-    <div class="container">
-        <div class="content">
-            <h2>Bem-vindo ao Banco dos Quadrinhos</h2>
-            <p>
-                O Banco dos Quadrinhos é o seu novo aliado para compartilhar sua coleção de histórias em quadrinhos. Explore um vasto acervo de HQs, interaja com outros colecionadores, e participe de uma comunidade ativa e apaixonada por quadrinhos.
-            </p>
-            <p>
-                Faça o download do aplicativo agora e comece a iteragir com outros usuários interessados em trocar HQs!
-            </p>
-            <a href="https://drive.google.com/drive/u/0/folders/1Qtd_i9mAAU45WTYsLvI7rU5AVtSXKomD" class="download-button">Baixar o App</a>
-        </div>
+        <main class="container">
+            <div class="content">
+                <h2>Bem-vindo ao Banco dos Quadrinhos</h2>
+                <p>
+                    O Banco dos Quadrinhos é o seu novo aliado para compartilhar sua coleção de histórias em quadrinhos. Explore um vasto acervo de HQs, interaja com outros colecionadores, e participe de uma comunidade ativa e apaixonada por quadrinhos.
+                </p>
+                <p>
+                    Faça o download do aplicativo agora e comece a interagir com outros usuários interessados em trocar HQs!
+                </p>
+                <a href="https://drive.google.com/drive/u/0/folders/1Qtd_i9mAAU45WTYsLvI7rU5AVtSXKomD" class="download-button">Baixar o App</a>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Banco dos Quadrinhos. Todos os direitos reservados.</p>
+        </footer>
     </div>
-
-    <footer>
-        <p>&copy; 2024 Banco dos Quadrinhos. Todos os direitos reservados.</p>
-    </footer>
 </body>
 </html>
